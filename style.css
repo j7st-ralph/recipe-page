@@ -1,0 +1,163 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* my styles */
+
+.color{
+    color: hsl(14, 45%, 36%);
+    color: hsl(332, 51%, 32%);
+    color: hsl(0, 0%, 100%);
+    color: hsl(330, 100%, 98%);
+    color: hsl(30, 54%, 90%);
+    color: hsl(30, 18%, 87%);
+    color: hsl(30, 10%, 34%);
+    color: hsl(24, 5%, 18%);
+}
+
+body{
+    font-size: 0.6rem;
+    color: hsl(24, 5%, 18%);
+    height: 100vh;
+}
+
+main{
+    border: 1px solid gold;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 54%, 90%);
+}
+
+.body{
+    border: 1px solid black;
+    display: inline-block;
+    padding: 12px;
+    height: 98%;
+    width: 370px;
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+img{
+    width: 350px;
+    align-self: center;
+    border-radius: 15px;
+    margin-bottom: 10px
+}
+
+h1{
+    margin-bottom: 5px;
+}
+
+h2{
+    color: hsl(14, 45%, 36%);
+}
+
+p{
+    margin-bottom: 7px;
+}
+
+.preparation-time{
+    background-color: hsl(30, 54%, 90%);
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-left: 8px;
+}
+
+.preparation-time{
+    margin-bottom: 5px;
+}
+
+.preparation-time ul{
+    padding-left: 12px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+span{
+    font-weight: bold;
+}
+
+.ingredients ul{
+    padding-left: 12px;
+    margin-top: 5px;
+}
+
+.instructions{
+    line-height: 15px;
+}
+
+.instructions ol{
+    padding-left: 12px;
+}
