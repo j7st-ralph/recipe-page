@@ -91,7 +91,6 @@ body{
 }
 
 main{
-    border: 1px solid gold;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -100,17 +99,18 @@ main{
 }
 
 .body{
-    border: 1px solid black;
     display: inline-block;
     padding: 12px;
-    height: 98%;
-    width: 370px;
+    height: 725px;
+    width: 400px;
     border-radius: 15px;
     background-color: hsl(0, 0%, 100%);
-}
+    font-family: "Outfit", sans-serif;
+    }
 
 img{
-    width: 350px;
+    width: 400px;
+    height: 130px;
     align-self: center;
     border-radius: 15px;
     margin-bottom: 10px
@@ -118,10 +118,15 @@ img{
 
 h1{
     margin-bottom: 5px;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h2{
     color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+    font-weight: 200;
 }
 
 p{
@@ -143,6 +148,11 @@ p{
     padding-left: 12px;
     margin-top: 6px;
     margin-bottom: 6px;
+    
+}
+
+.preparation-time h4{
+  color: hsl(332, 51%, 32%);
 }
 
 span{
@@ -160,4 +170,23 @@ span{
 
 .instructions ol{
     padding-left: 12px;
+}
+
+.nutrition-table{
+  display: block;
+}
+
+.nutrition-table div{
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nutrition-table span{
+  color: hsl(14, 45%, 36%);
+  display:inline;
+  margin-right: 150px;
+  justify-content: center;
+  padding-left: 5px;
 }
